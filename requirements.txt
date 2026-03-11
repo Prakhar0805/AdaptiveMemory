@@ -1,0 +1,7 @@
+sentence-transformers==2.2.2
+chromadb==0.4.22
+spacy==3.7.2
+torch>=2.0.0
+numpy>=1.24.0
+python-dateutil>=2.8.2
+ollama>=0.1.0

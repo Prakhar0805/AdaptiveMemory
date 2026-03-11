@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.env
+*.env
+
+# ChromaDB persistent storage
+chroma/
+chromadb/
+*.chroma
+
+# Evaluation outputs
+eval_adaptive_conv*_detailed_*.json
+eval_adaptive_conv*_analysis_*_report.json
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Custom
+tocheck_rag.py
+locomo10.json
+baseline/
