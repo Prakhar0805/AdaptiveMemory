@@ -36,28 +36,7 @@ AdaptiveMemory was built specifically to address each of these failure modes.
 
 ## Architecture
 
-```
-Query
-  │
-  ├─── Working Memory ──────────────────── Last 10 turns (exact, no search)
-  │
-  ├─── Semantic Memory ─────────────────── Extracted facts via NER + regex
-  │         └── ChromaDB + BGE embeddings
-  │
-  └─── Episodic Memory ─────────────────── Full messages, importance-weighted
-            ├── Dual-query retrieval       (original + first-person supplement)
-            ├── CrossEncoder reranking     (ms-marco-MiniLM-L-6-v2)
-            └── Context window expansion  (±1 neighbor for top-3 results)
-                     │
-                     ▼
-              Date resolution pipeline
-                     │
-                     ▼
-              Question-type aware prompting
-                     │
-                     ▼
-                   Answer
-```
+![Architecture](architecture.svg)
 
 ### Memory Tiers
 
